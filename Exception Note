@@ -1,0 +1,37 @@
+****Exception:::
+Types of errors(handled) :
+	1)Compile time errors : Which we get while compiling, these are shown on screen also like syntax errors...
+		These are easy to find while compiling.
+	2)Runtime error: In runtime error execution basically stops, these are called exceptions and we need to handle
+		exceptions.When you try to open file, and if it doesn't exist...Dividing a number by zero...
+	3)Logical errors : Errors in the logical part, apart from the above two exceptions.	
+
+
+***Exceptions: RuntimeException[Unchecked Exception], SQLException, IOException....	
+Checked : These are the exceptions that are checked at compile time.
+Unchecked : It compiles fine, but it throws ArithmeticException when run. The compiler allows it to compile because
+			ArithmeticException is an unchecked exception.
+
+
+=> When executing Java code, different errors can occur: coding errors made by the programmer, errors due to wrong 
+input, or other unforeseeable things.
+=> When an error occurs, Java will normally stop and generate an error message. The technical term for this is: 
+Java will throw an exception (throw an error).	
+	=>
+	The try statement allows you to define a block of code to be tested for errors while it is being executed.
+	The catch statement allows you to define a block of code to be executed, if an error occurs in the try block.
+	
+Try-Catch multiple:
+=> //you can have multiple catch statements to handle exceptions.
+Always have the parent exception at last, bcz if it is at top then there no reason for giving remaining exceptions.	
+	
+	
+#####Types of errors: Errors can't be handled
+1)ThreadDeath
+2)IOError
+3)VirtualMachineError	
+4)OutOfMemory
+
+
+****These Exceptions and Errors extends the Throwable class, and the top class that gets implemented by Throwable or 
+Throwable class extends Object Class.
